@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>quiz</title>
+</head>
+<link rel="shortcut icon" href="quiz-master 2/icon/Users to Creators Metaverse Artificial Intelligence Robotics IoT Coding.jpg" type="image/png">
+<link rel="stylesheet" href="css/index.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    .qPanel {
+    margin: 185px; 
+    margin-left: 12px;
+    width: 2500px;
+    height: 250px;
+    text-align: left; 
+}
+.lftCss button {
+        margin-right: 20px; 
+    }
+    .extra-box-container {
+        align-items: center;
+        padding: 10px; 
+        max-width: 80%; 
+        display: flex; 
+        justify-content: center; 
+    }
+    .logo {
+        max-width: 200px; 
+        max-height: 50%;
+        margin-right: 10px; 
+    }
+    .txt222{
+        text-align: center;
+        font-size: 19px;
+    }
+
+</style>
+<body>
+    <div class="extra-box-container">
+        <div>
+        <img src="Users to Creators Metaverse Artificial Intelligence Robotics IoT Coding.jpg" alt="Logo" class="logo">
+        </div>
+        <div class="txt222">
+            <h2 style="text-align: center;">Online Examination</h2>
+        </div>
+    </div>
+    <div class="quiz-container">
+        <div class="progress-bar">
+            <div class="progress-instructions">
+                <h3>Instructions</h3>
+                <p style="font-size: 15px;color: black;">Each correct answer earns you 1 point.</p>
+                    <p style="font-size: 15px;color: black;">You have a total of 30 minutes to complete the quiz.</p>
+                    <p style="font-size: 15px;color: black;">Good luck and have fun!</p>
+                    </p>
+                <p style="font-size: 15px;">You can check each question through this, Remember this is only for viewing questions</p>
+            </div>
+            <ul class="progress-list">
+               
+                <li class="progress-item">1</li>
+                <li class="progress-item">2</li>
+                <li class="progress-item">3</li>
+                <li class="progress-item">4</li>
+                <li class="progress-item">5</li>
+                <li class="progress-item">6</li>
+                <li class="progress-item">7</li>
+                <li class="progress-item">8</li>
+                <li class="progress-item">9</li>
+                <li class="progress-item">10</li>
+            </ul>
+        </div>
+    <br/><br/><br/>
+    <div class="timer">
+         <span id="countdown"></span> 
+    </div>
+    <div class="qPanel">
+        <div class="ques" id="question"> 
+            <br>
+            <br>
+            <br>
+        </div>
+        <div>
+            <input type="radio" id="opt1" name="options">
+            <label for="opt1" id="optt1"></label>
+        </div>
+        <div>
+            <input type="radio" id="opt2" name="options">
+            <label for="opt2" id="optt2"></label>
+        </div>
+        <div>
+            <input type="radio" id="opt3" name="options">
+            <label for="opt3" id="optt3"></label>
+        </div>
+        <div>
+            <input type="radio" id="opt4" name="options">
+            <label for="opt4" id="optt4"></label>
+        </div>
+        <div class="lftCss">
+        <button  style="background-color: green;" class="nxtBtn" onclick="checkAnswer()">Next</button>
+        </div>
+        <div class="lftCss">
+            <button style="background-color: red;" class="nxtBtn" onclick="checkAnswersecond()">Submit</button>
+            </div>
+    </div>
+    <script src="js/data.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>
